@@ -8,6 +8,8 @@
 <h1>Please find the below Name details ...</h1>
 {% for Company in company_list %}
 <h1><a href="/{{Company.id}}" >{{Company.name }}</a></h1>
+
 {% endfor %}
+<a href="/CompanyCreateView " class="btn btn-lg btn-primary">Add Company Details.</a>
 </body>
 </html>

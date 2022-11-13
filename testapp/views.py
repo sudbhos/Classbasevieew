@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.urls import reverse_lazy
 from django.views.generic import ListView,DetailView,UpdateView,DeleteView,CreateView
 from .models import Company
 # Create your views here.
@@ -16,3 +17,8 @@ class CompanyCreateView(CreateView):
 class CampanyUpdateView(UpdateView):
     model = Company
     fields = ["name","ceo","city","ctype"]
+
+class CompanyDeleteViews(DeleteView):
+    model = Company
+    success_url=reverse_lazy("CompanyListView")
+
