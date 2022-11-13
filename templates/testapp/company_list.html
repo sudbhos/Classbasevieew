@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Please find the below Name details ...</h1>
+{% for Company in company_list %}
+<h1><a href="/{{Company.id}}" >{{Company.name }}</a></h1>
+{% endfor %}
+</body>
+</html>

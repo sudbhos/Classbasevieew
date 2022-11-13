@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Template </title>
+</head>
+<body>
+<h1>Please insert the company details .</h1>
+<form method="post">
+    {{form.as_p}}
+    {% csrf_token %}
+    <input type="submit" class="btn btn-btn-lg btn-primary" value="Insert/Upload data">
+</form>
+</body>
+</html>
